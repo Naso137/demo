@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: demo
-        image: demo:latest
+        image: naso137/demo:latest
         ports:
         - containerPort: 8080
