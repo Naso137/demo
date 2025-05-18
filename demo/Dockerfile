@@ -9,6 +9,6 @@ FROM maven:3.9.0-eclipse-temurin-19
 
 WORKDIR /app
 
-COPY --from=builder /app /app
+COPY --from=builder /app/target/*.jar app.jar
 
-CMD ["java", "-jar", "target/demo.jar"]
+CMD ["java", "-jar", "app.jar"]
